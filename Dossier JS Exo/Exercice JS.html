@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="CSS/Calculatrice.css"/>
+        <title>Exercice</title>    
+    </head>
+    <body> 
+        <div class="container shadow text-dark h-100">
+            <h1> <div class="bg-info text-white mx-2 my-2 p-2 text-center rounded rounded-1">Exercice | Javascript</div></h1>
+            <hr>        
+                <div class="row">
+                    <div class="col-12">
+                        <p> <strong> <u>Exercice 5 : </u></strong></p>
+                            <button id="Id_bouton1" type="button" class="btn btn-dark">Identification</button> <br> <br>
+
+                        <p> <strong><u>Exercice 6 : </u></strong></p>
+
+                            <button id="Id_bouton2" type="button" class="btn btn-dark">Calcul Variable</button>
+                            <button id="Id_bouton3" type="button" class="btn btn-dark">Valeur de "d"</button> <br> <br>
+
+                        <p> <strong><u> Exercice 7 : </u></strong></p>
+
+                            <button id="Id_bouton4" type="button" class="btn btn-dark">Nombre Pair ou Impair</button> <br> <br>
+                    
+                    </div>
+                </div> 
+
+                        <p> <strong><u> Veuillez entrez votre date de naissance :</u></strong></p>
+                
+                    <div class="row ">
+                        <div class="col-3">
+                                <input type="date" class="form-control" id="ddn"/>
+                        </div>
+                            <div class="col-5">
+                                <button id="btnCalculate" type="button" onclick="fnCalculateAge()" class="btn btn-dark">Validation de l'âge </button> <br> <br>
+                            </div>
+                    </div>
+
+
+ <!-- ************************************************************************************************* -->
+ <!-- *********************************CALCULATRICE *************************************************** -->
+ <!-- ************************************************************************************************* -->
+
+
+                    <p> <strong><u> La calculatrice :</u></strong></p> <br>
+
+                
+                    <table class="calculatrice" id="calc">
+                        <tr>
+                            <td colspan="4" class="calc_td_resultat">
+                                <input type="text" readonly="readonly" name="calc_resultat" id="calc_resultat" class="calc_resultat" onkeydown="javascript:key_detect_calc('calc',event);" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="CE" onclick="javascript:f_calc('calc','ce');" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="&larr;" onclick="javascript:f_calc('calc','nbs');" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="%" onclick="javascript:f_calc('calc','%');" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="+" onclick="javascript:f_calc('calc','+');" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="7" onclick="javascript:add_calc('calc',7);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="8" onclick="javascript:add_calc('calc',8);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="9" onclick="javascript:add_calc('calc',9);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="-" onclick="javascript:f_calc('calc','-');" />
+                            </td>
+                        </tr>
+                                    <tr>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="4" onclick="javascript:add_calc('calc',4);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="5" onclick="javascript:add_calc('calc',5);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="6" onclick="javascript:add_calc('calc',6);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="x" onclick="javascript:f_calc('calc','*');" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="1" onclick="javascript:add_calc('calc',1);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="2" onclick="javascript:add_calc('calc',2);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="3" onclick="javascript:add_calc('calc',3);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="&divide;" onclick="javascript:f_calc('calc','');" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="0" onclick="javascript:add_calc('calc',0);" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="&plusmn;" onclick="javascript:f_calc('calc','+-');" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="," onclick="javascript:add_calc('calc','.');" />
+                            </td>
+                            <td class="calc_td_btn">
+                                    <input type="button" class="calc_btn" value="=" onclick="javascript:f_calc('calc','=');" />
+                            </td>
+                        </tr>
+                    </table> <br> <br>
+
+                            
+ <!-- ************************************************************************************************* -->
+ <!-- ****************************** FIN DE LA CALCULATRICE ******************************************* -->
+ <!-- ************************************************************************************************* -->
+
+
+ <!-- ************************************************************************************************* -->
+ <!-- ****************************** LES BOUCLES - COURS 8 ******************************************** -->
+ <!-- ************************************************************************************************* -->
+
+
+                       
+        <p> <strong><u> Exercice 8 : </u></strong></p> 
+
+                <div class="row">
+                        <div class="col-2">       
+                                <button id="Id_bouton8" type="button" class="btn btn-dark">Saisie de prénoms</button>
+                        </div>
+
+                                <div class="col-2">
+                                        <button id="Id_bouton9" type="button" class="btn btn-dark">Entier inférieur de "N"</button>
+                                </div>
+
+                                        <div class="col-2">
+                                                <button id="Id_bouton10" type="button" class="btn btn-dark">Calcul d'une moyenne</button>
+                                        </div>
+
+                                                <div class="col-2">
+                                                        <button id="Id_bouton11" type="button" class="btn btn-dark">Calcul de multiples</button>
+                                                </div>
+
+                                                        <div class="col-2">
+                                                                <button id="Id_bouton12" type="button" class="btn btn-dark">Calcul de voyelles</button></div> <br> <br>
+                </div> <br>
+
+
+ <!-- ************************************************************************************************* -->
+ <!-- ****************************** LES BOUCLES - COURS 8 ******************************************** -->
+ <!-- ************************************************************************************************* -->
+                                                      
+        <p> <strong><u> Exercice 9 : </u></strong></p> 
+
+                <div class="row">
+                        <div class="col-12">
+                                <button id="Id_bouton13" type="button" class="btn btn-dark">Multiplication et Carré</button>
+                                <button id="Id_bouton14" type="button" class="btn btn-dark">String Token</button>
+                        </div>
+                </div>
+        
+
+    <script src="JS/javascript.js"></script>
+    <script src="JS/Calculatrice.js">
+    document.getElementById('calc').onload=initialiser_calc('calc');
+    </script>
+    
+    </div>
+  </body>
+</html>
