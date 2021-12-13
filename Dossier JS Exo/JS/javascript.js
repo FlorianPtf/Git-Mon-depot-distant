@@ -123,14 +123,10 @@ var prenom = window.prompt("Saisissez le prénom N°" + np);
 
 if (prenom == true) 
 {   
-    // Exécute le calcul et stocke le résultat   
-    // dans une variable nommée ‘resultat’  
     resultat = prenom;
 
-    // A chaque tour, on affiche le résultat courant à l’utilisateur
     window.alert("Le nombre de prenom inscrit sont " + np);
-
-    // A chaque tour, on ajoute +1 à la variable i  
+ 
     np++; 
 }
 }
@@ -209,5 +205,126 @@ var voyelle = window.prompt("Veuillez saisir un mot")
         return nbVoyelles;
     }
      
-    console.log("le nombre de voyelles est : " + compterNbVoyelles(voyelle));
+    window.alert("le nombre de voyelles est : " + compterNbVoyelles(voyelle));
 }
+
+
+// **************************************************************************
+// ********************** LES FONCTIONS - Cours 9 ***************************
+// **************************************************************************
+
+
+var bouton13 = document.getElementById("Id_bouton13");
+bouton13.addEventListener("click", clickbtn13);
+
+function clickbtn13(){
+
+    var x = window.prompt("Veuillez entrer un chiffre")
+    var y = window.prompt("Veuillez entrer un multiplicateur")
+
+        function produit(x, y)
+        {
+        var resultat = x*y;
+        return resultat;
+    }
+
+}
+
+
+var bouton14 = document.getElementById("Id_bouton14");
+bouton14.addEventListener("click", clickbtn14);
+
+function clickbtn14(){
+
+
+}
+
+// **************************************************************************
+// ********************** LES TABLEAUX - Cours 10 ***************************
+// **************************************************************************
+
+
+var bouton15 = document.getElementById("Id_bouton15");
+bouton15.addEventListener("click", clickbtn15);
+
+function clickbtn15(){
+
+    var taille = window.prompt("Entrez le nombre de colonne souhaitez ")
+    var myTableau = new Array();
+    var i = 1;
+    var n = 0;
+    
+
+    while (taille > 0) {
+        var donné = window.prompt("Entrez la donnée N°" + i);
+   
+        myTableau[n] = [donné];
+
+        taille--;
+
+        i++;
+
+        n++;
+
+        donné++;
+    }
+
+    console.table(myTableau)
+}
+
+
+
+var bouton17 = document.getElementById("Id_bouton17");
+bouton17.addEventListener("click", clickbtn17);
+
+function clickbtn17(){
+
+    var taille = window.prompt("Entrez le nombre de colonne souhaitez ")
+    var myTableau2 = new Array();
+    var m = 1;
+    var n = 0;
+    
+
+    while (taille > 0) {
+        var donné = window.prompt("Entrez la donnée N°" + m);
+   
+        myTableau2[n] = [donné];
+
+        taille--;
+
+        m++;
+
+        n++;
+
+        donné++;
+    }
+
+    function bubbleSort(items) {
+        var length = items.length;  
+        for (var i = 0; i < length; i++) { 
+              for (var j = 0; j < (length - i - 1); j++) { 
+                       if(items[j] > items[j+1]) {
+                               var tmp = items[j]; 
+                    items[j] = items[j+1]; 
+                    items[j+1] = tmp; 
+                }
+            }        
+        }
+    }
+    
+    var arr = [donné]; 
+    bubbleSort(arr);
+    
+    console.log(arr);
+    console.table(myTableau2)
+}
+
+
+
+// **************************************************************************
+// ********************** LES TABLEAUX - Cours 10 ***************************
+// **************************************************************************
+
+
+
+
