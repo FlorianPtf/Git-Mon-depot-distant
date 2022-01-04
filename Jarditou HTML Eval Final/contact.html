@@ -5,43 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="Stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="responsive.css">
 </head>
 <body>
-        <!-- Entete du site -->
 
-        <div class="Logo">
-            <header> <img src="IMG/jarditou_logo.jpg" alt="Logo jarditou logo" title="Jarditou Logo" height="100" width="300"> 
-        </div> 
-        
-        <div class="Tlj">
-            <p>Tout le jardin</p>
-        </div>
 
+<!-- **********************************************************************************
+************************************ HEADER *******************************************
+*************************************************************************************** -->
+
+
+    <header> <img src="IMG/jarditou_logo.jpg" alt="Logo jarditou logo" title="Jarditou Logo" height="150" width="400">   <br>
+        <p>La qualité depuis 70 ans</p>
         <br>
 
-        <!-- Menu navigation -->
-
-        <ul type="none">
-            <li><a href="Index.html" title="Accueil">Accueil</a></li> 
-            <li><a href="tableau.html" title="Tableau">Tableau</a></li>
-            <li><a href="contact.html" title="Contact">Contact</a></li> 
-        </ul>
-       
-        <!-- Logo  -->
-
-        <img src="IMG/promotion.jpg" alt="Jarditou Promotion" title="Jarditou Promotion" height="364">
+        <nav>
+            <ul>
+                <li><a href="Index.html" title="Accueil">Accueil</a></li> 
+                <li><a href="tableau.html" title="Tableau">Tableau</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li> 
+            </ul>
+        </nav>
+        <img src="IMG/promotion.jpg" alt="Jarditou Promotion" title="Jarditou Promotion">
         
     </header>
 
-    <div class="Colonne">
-        <p>[COLONNE DROITE]</p>
-    </div>
-
 <h1>Contact</h1> <hr> <p>* Ces zones sont obligatoires</p> <br>
 
-        <!-- Formulaire -->
+
+<!-- **********************************************************************************
+*********************************** FORMULAIRE ****************************************
+*************************************************************************************** -->
+
 
     <form action="http://bienvu.net/script.php" method="POST">
         <fieldset>
@@ -74,6 +68,10 @@
     
         </fieldset> <br> <br>
 
+
+<!-- **********************************************************************************
+******************************** SECTION DEMANDE **************************************
+*************************************************************************************** -->
         <fieldset>
             <legend>Votre demande</legend>
             
@@ -84,14 +82,11 @@
                     <option value="Question sur un produit" >Question sur un produit</option>
                     <option value="Réclamation" >Réclamation</option>
                     <option value="Autres" >Autres</option>
-                </select>
-<br>
+                </select> <br>
 
             <label for="Question">Votre Question* :</label>
                 <textarea name="Question" id="Question" rows="2" cols="15" required> </textarea>
-        </fieldset>
-
-<br>
+        </fieldset> <br>
 
         <input type="checkbox" name="Accepte" required> * J'accepte le traitement informatique de ce formulaire
 
@@ -100,15 +95,21 @@
         <input type="submit" value="Envoyer">
         <input type="reset" value="Annuler">
 
-        <!-- Footer -->
+
+<!-- **********************************************************************************
+************************************ FOOTER *******************************************
+*************************************************************************************** -->
+
 
         <hr>
         <footer>
-            <ul type="none">
-                <li>Mentions légales</li>
-                <li>Horaires</li>
-                <li>Plan du site</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>Mentions légales</li>
+                    <li>Horaires</li>
+                    <li>Plan du site</li>
+                </ul>
+            </nav>
         </footer>
 
     </form>

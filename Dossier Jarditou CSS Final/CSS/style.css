@@ -1,0 +1,77 @@
+@media screen and (max-width: 768px)
+{  
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Acc {
+        max-width: 100%;
+        height: auto;
+        font-size: 118%;
+    }
+
+    .Colonne {
+        display:none;
+        /* Colonne droite masqué sur mobiles */
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        font-size: 118%;
+        /* Augmentation de la police sur mobiles */
+    }
+}
+
+html{
+    font-size: 100%;
+}
+
+ul {
+    font-size: 2vh;
+    display:flex;
+    margin-top: 5px;
+    border: 20px solid black;
+    border-radius: 10px;
+    background-color: black;
+    /* Header */
+}
+
+
+a { color: blanchedalmond;
+    margin-right: 20px;
+    font-size: 2vh;
+}
+
+li {
+    color: blanchedalmond;
+    margin-right: 20px;
+    font-size: 2vh;
+}
+
+.Logo {
+    float:left;
+    /* Logo */
+}
+.Tlj{
+    font-size: 40pt;
+    text-align: center;
+    /* "Tout le jardin"*/
+}
+
+.Colonne {
+    float:right;
+    background-color: grey;
+    width: 500px;
+    height: 600px;
+    /* Colonne de droite */
+}
+
+.Acc { 
+    border: blanchedalmond;
+    width: 1500px;
+    height:auto;
+    /* Bloc accueil */
+}
