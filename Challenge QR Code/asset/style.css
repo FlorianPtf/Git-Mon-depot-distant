@@ -1,0 +1,78 @@
+/* ***************** Couleur ****************** */
+
+/* - White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', 'Sans-serif';
+    font-size: 16px;
+}
+
+/* ***************** Card ****************** */
+
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 1.25rem;
+}
+
+/* ***************** Card QR Code ****************** */
+
+.card-container{
+    background-image: url(../images/image-qr-code.png);
+    position: relative;
+    background-size: 18.75rem;
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 10px;
+}
+
+/* ***************** Card Hover ****************** */
+
+.card-container:hover,
+.text1:hover,
+.text2:hover{
+    overflow: hidden;
+    transition: 0.5s ease;
+    transform: scale(1.13);
+}
+
+/* ***************** Texte 1 - 2 ****************** */
+
+.text1{
+    color: hsl(218, 44%, 22%);
+    margin-top: 1.5rem;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.text2{
+    color: hsl(220, 15%, 55%);
+    display: flex;
+    text-align: center;
+    padding-top: 1px;
+    padding-left: 5px;
+}
+
+/* ***************** Footer ****************** */
+
+.attribution{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
