@@ -29,9 +29,6 @@ My Solution of the challenge:
 
 ### Links
 
-- Live Site URL: [URL](https://Srijan945.github.io)
-
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -44,9 +41,6 @@ My Solution of the challenge:
 - [Resource-1](https://stackoverflow.com/questions/40769694/overlay-transparent-image-on-hover) - This really helped me in understanding how we can make use of PseudoElements for Image Overlay. 
 
 ## Author
-
-- Name - [Srijan Saini](#)
-
 
 ## Acknowledgments
 
