@@ -402,6 +402,11 @@ input::placeholder {
 }
 
 
+/* ********************************************************************************************************* */
+/* ******************************************* BOUTON UNDERLINE ******************************************** */
+/* ********************************************************************************************************* */
+
+
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -462,6 +467,12 @@ input::placeholder {
     transform-origin: bottom left;
 }
 
+
+/* ********************************************************************************************************* */
+/* ********************************************** CARD DETAILS ********************************************* */
+/* ********************************************************************************************************* */
+
+
 .containerCard {
     position: relative;
     display: flex;
@@ -498,7 +509,7 @@ input::placeholder {
 .containerCard .card .imgbx {
     position:relative;
     max-width: 260px;
-    max-height: 260px;
+    max-height: 250px;
     top: -60px;
     left: 0px;
     box-shadow: 0 40px 60px rgba(0,0,0,0.5);
@@ -534,11 +545,9 @@ input::placeholder {
 .containerCard .card:hover .content{
     visibility: visible;
     opacity: 1;
-    margin-top: -30%;
+    margin-top: -25%;
     transition-delay: 0.3s;
 }
-
-
 
 #Btn_details {
     display: flex;
