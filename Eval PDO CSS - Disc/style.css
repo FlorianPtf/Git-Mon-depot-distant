@@ -317,6 +317,19 @@ input::placeholder {
 /* ********************************************************************************************************* */
 
 
+.navbar {
+    position: relative;
+    background: hsla(271, 55%, 51%, 0.200);   
+    border-bottom: solid 10px;
+    border-color: hsla(204, 89%, 43%, 0.201);
+}
+
+.navbar img {
+    width: 200px;
+    height: auto;   
+
+}
+
 .navbar #Liste {
     position: relative;
     display:inline-block;
@@ -339,6 +352,7 @@ input::placeholder {
     background: #2470af;
     box-shadow: 0 0 10px #2470af, 0 0 40px #2470af,0 0 80px #2470af;
     transition-delay: 1s;
+    width: 200px;
 }
 
 #Liste span {
@@ -467,6 +481,19 @@ input::placeholder {
     transform-origin: bottom left;
 }
 
+.intro {
+    position: absolute;   
+    font-size:24px;
+    font-weight: 500;
+    color:white;
+    left: 37%;
+}
+
+.intro hr {
+    border: 1px solid;
+    border-color: #0c81cf ;
+}
+
 
 /* ********************************************************************************************************* */
 /* ********************************************** CARD DETAILS ********************************************* */
@@ -479,8 +506,8 @@ input::placeholder {
     justify-content: space-around;
     width: 1100px;
     flex-wrap: wrap;
-    padding-top: 70px;
-    padding-left: 30px;
+    padding-top: 7%;
+    padding-left: 7%;
     transform: translate(20%, 0%);
 }
 

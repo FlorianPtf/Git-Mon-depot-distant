@@ -38,13 +38,12 @@
                 {$cd++;}?>
               
         <div class="navbar">  
-                <a href="#" id="Liste">
+                <a href="#" id="Liste"> <img src="asset/Velvet_Records 1.png" title="Velvet Records" alt="Velvet Records"> 
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    LISTE DES DISQUES - <?php echo $cd; ?>
-                </a>    
+                </a>  
             <ul>
                 <li> <a href="add_form.php" id="Btn5" type="button"
                 class="Btn5">Ajouter</a></li>
@@ -53,6 +52,10 @@
             </ul>
         </div>
     </header>
+
+        <div class="intro">
+            <h2> LISTE DES DISQUES - <?php echo $cd; ?> </h2> <hr>
+        </div>
 
     <div class="containerCard">
         <?php $requete1 = $db->query("SELECT * FROM disc JOIN artist ON disc.artist_id = artist.artist_id");
