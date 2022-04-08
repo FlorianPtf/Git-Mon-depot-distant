@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 @keyframes transitionin{
     from {
         opacity:0.8;
@@ -34,6 +33,47 @@
     to{
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes transitioncotedetailsg{
+    0% {
+        opacity:0;
+        transform:translateX(-10rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes transitioncotedetailsd{
+    
+    0% {
+        opacity:0;
+        transform:translateX(100%);
+    }
+    10% {
+        opacity:0;
+        transform:translateX(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes transitiondetailsin{
+    from {
+        opacity:0.8;
+        transform:translateY(8rem);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -167,7 +207,7 @@ body {
     font-weight: 500;
 }
 
-.form-text input {
+.containerLogin .form-text input {
     width: 18rem;
     padding: 0 5px;
     height: 40px;
@@ -322,7 +362,7 @@ input::placeholder {
     font-weight: 500;
 }
 
-.form-text input {
+.containerConnect .form-text input {
     width: 18rem;
     padding: 0 5px;
     height: 40px;
@@ -956,14 +996,14 @@ footer{
 }
 
 .aboutlogo img{
--webkit-animation: transitioncoteg 2000ms ease-in-out;
-animation: transitioncoteg 2000ms ease-in-out;
+    -webkit-animation: transitioncoteg 2000ms ease-in-out;
+    animation: transitioncoteg 2000ms ease-in-out;
 }
 
 .abouttext{
     -webkit-animation: transitioncoted 2000ms ease-in-out;
     animation: transitioncoted 2000ms ease-in-out;
-    }
+}
 
 .aboutlogo{
     margin-top: 10%;
@@ -1068,7 +1108,7 @@ animation: transitioncoteg 2000ms ease-in-out;
     height: 7em;
 }
 
-.form-text input, textarea {
+.containercontact .form-text input, textarea {
     width: 18rem;
     padding: 0 5px;
     height: 40px;
@@ -1113,12 +1153,24 @@ animation: transitioncoteg 2000ms ease-in-out;
 
 .footercontact{
     display: flex;
-    overflow: hidden;
     align-items: center;
     justify-content: center;
 }
 
-.footercontact button {
+.footercontact #outersubmit2{
+    display: flex;
+    position: absolute;
+    margin-top: 2.5em;
+    width: 55%;
+    height: 4.2em;
+    background-color: transparent;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.footercontact .selectnone {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1148,31 +1200,576 @@ animation: transitioncoteg 2000ms ease-in-out;
     transition: 0.4s;
 }
 
-.footercontact button:hover span{
+.footercontact .selectnone:hover span{
     transition: 0.4s;
     font-size: 20px;
+    
 }
 
-.footercontact button:focus{
+.footercontact .selectnone:focus{
     outline: none;
     border: 2px solid transparent;
     width: 50px;
     border-left: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
-    animation: spin 2s 200ms forwards
+    animation: spin 2s 200ms forwards;
 }
 
-.footercontact button:focus span{
+.footercontact .selectnone:focus span{
     color: transparent;
 }
 
-.footercontact button:focus svg{
-    animation: check 1ms 2100ms forwards
+.footercontact .selectnone:focus svg{
+    animation: check 1ms 2100ms forwards;
 }
 
 
+/* ********************************************************************************************************* */
+/* ********************************************* PAGE DETAILS ********************************************** */
+/* ********************************************************************************************************* */
 
 
+.bgdetails{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    overflow: hidden;
+    position: fixed;
+}
 
 
+.containerDetails .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.footerdetails{
+    width: 100%;
+    height: auto;
+}
+
+.bande .bandetop{
+    display: flex;
+    width: 550rem;
+    height: 200rem;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 10px solid rgba(0, 136, 220, 0.555);
+    border-bottom: none;
+    transform: translate(-39%, 21%);
+    box-shadow: 0 -1rem 7rem rgb(0, 136, 220, 0.9);
+}
+
+.bande2 .bandebot{
+    display: flex;
+    width: 550rem;
+    height: 200rem;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 5px solid rgba(184, 0, 0, 0.6);
+    border-bottom: none;
+    transform: translate(-39%, -78%);
+    box-shadow: 0 0 6rem rgb(255, 0, 0, 0.9), 0 -0.3rem 1.5rem rgba(255, 230, 0, 0.5);
+}
+
+.detailstitre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.detailstitre img{
+    display: flex;
+    position: absolute;
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    margin-top: 35%;
+    margin-left: 40%;
+    animation: transitioncotedetailsd 2000ms ease-in-out;
+}
+
+.bande, .bande2{
+    animation: transitiondetailsin 1500ms ease-in-out;
+}
+
+.detailstitre img:hover #detailsimg{
+    border-radius: 5%;
+    transition: 0.5s ease-in-out;
+}
+
+.detailstitre .detailsul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    margin-top: 35%;
+    margin-left: -40%;
+    animation: transitioncotedetailsg 2000ms ease-in-out;
+}
+
+.detailstitre .detailsul .liartist, .lititre, .lilabel{
+    display: flex;
+    text-decoration: none;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 5px;
+
+}
+
+.detailstitre .detailslogo{
+    list-style: none;
+}
+
+.detailstitre .detailslogo #detailsupdate,
+.detailstitre .detailslogo #detailsdelete{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    animation: transitioncotedetailsg 2000ms ease-in-out;
+    cursor: pointer;
+}
+
+.detailstitre .detailslogo #detailsupdate{
+    margin-top: 25%;
+    margin-left: -25%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.detailstitre .detailslogo #detailsdelete{
+    margin-top: 25%;
+    margin-left: -20%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.detailstitre .detailslogo .detailsmodifier{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    margin-top: 25%;
+    margin-left: -30rem;
+    color: white;
+    opacity: 0;
+}
+
+.detailstitre .detailslogo .detailssupprimer{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    margin-top: 25%;
+    margin-left: -25rem;
+    color: white;
+    opacity: 0;
+}
+
+.detailstitre .detailslogo .lipencil:hover p{
+    transform: translateY(3rem);
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.detailstitre .detailslogo .litrash:hover p{
+    transform: translateY(3rem);
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.detailslogo li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.detailstitre .litrash:hover #detailsdelete{
+    transform: scale(1.25);
+    transition: 0.5s ease-in-out;
+}
+
+.detailstitre .lipencil:hover #detailsupdate{
+    transform: scale(1.25);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* ********************************************************************************************************* */
+/* ********************************************* PAGE AJOUT ************************************************ */
+/* ********************************************************************************************************* */
+
+#bgadd {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0.95;
+}
+
+.containerAdd {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    opacity: 85%;
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 0 8rem rgba(0, 0, 0, 0.900);
+}
+
+.containerAdd h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.containerAdd hr {
+    width: 50%;
+    height: auto;
+    color: rgb(255, 255, 255)
+}
+
+.containerAdd #ajout {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -10%);
+    margin-top: 10%;
+}
+
+.containerAdd form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.containerAdd label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-text input{
+    width: 25rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+.form-group select{
+    width: 25.5rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+.form-group select option{
+    background: #804b77;
+}
+
+
+#fileUpload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    width: 10rem;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-weight: 700;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+    cursor: pointer;
+}
+
+#file-upload{
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+#fileUpload:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+
+input::placeholder {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.footeradd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#Btnadd {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#Btnadd:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+#BtnBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#BtnBack:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+
+/* ********************************************************************************************************* */
+/* ********************************************* PAGE AJOUT ************************************************ */
+/* ********************************************************************************************************* */
+
+
+#bgupdate {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0.95;
+}
+
+.containerUpdate {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    opacity: 85%;
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 0 8rem rgba(0, 0, 0, 0.900);
+}
+
+.containerUpdate h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.containerUpdate hr {
+    width: 50%;
+    height: auto;
+    color: rgb(255, 255, 255)
+}
+
+.containerUpdate #update {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -10%);
+    margin-top: 10%;
+}
+
+.containerUpdate form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.containerUpdate label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-text input{
+    width: 25rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+.form-group select{
+    width: 25.5rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+.form-group select option{
+    background: #804b77;
+}
+
+
+#fileUpload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    width: 10rem;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-weight: 700;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+    cursor: pointer;
+}
+
+#file-uploadmodif{
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+#fileUpload:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+
+input::placeholder {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.footerupdate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#Btnupdate {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#Btnupdate:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+#imageupdate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+#BtnBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#BtnBack:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}

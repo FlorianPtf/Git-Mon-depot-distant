@@ -46,7 +46,7 @@
                 <li> <a href="disc_index.php" id="Btn5" type="button"
                 class="Btn5">Home</a></li>
                 <li> <a href="deconnexion.php" id="BtnDeco" type="button"
-                class="BtnDeco">Déconnexion</a></li>
+                class="BtnDeco">Disconnect</a></li>
             </ul>
         </div>
     </header>
@@ -60,8 +60,8 @@
 
         <div class="formulaire" name="contact" id="contact">
 
-        <form action="contact_script.php" method="post" autocomplete="off" enctype="multipart/form-data">
-
+        <form action="contact_script.php" method="post" autocomplete="off" enctype="multipart/form-data" id="formulairecontact">
+        <button type="submit" hidden></button>
 
         <div class="form-text">
             <label for="mail">
@@ -70,13 +70,11 @@
         </div>
 
 
-
         <div class="form-text">
             <label for="pseudo">
             </label> <br>
                 <input type="text" class="form" name="pseudo" id="pseudo" placeholder= "Renseigner votre pseudo " required>
-        </div>
-
+    </div>
 
 
         <div class="form-text">
@@ -84,19 +82,21 @@
                 <textarea class="form-area" name="contactmsg" id="contactmsg" placeholder="Votre message... " required></textarea>
         </div>
 
-
-
-
             <div class="footercontact">
-                <button class="selectnone" value="submit">
+                    <button class="selectnone" type="button" id="outersubmit1">
+                    
+
                     <span tabindex="0">Envoyez</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewbox="0 0 24 24">
                         <path d="M0 11c2.761.575 6.312 1.688 9 3.438 3.157-4.23 8.828-8.187 15-11.438-5.861 5.775-10.711 12.328-14 18.917-2.651-3.766-5.547-7.271-10-10.917z"/>
                     </svg>
                 </button>
+                <button class="selectnone2" type="button" id="outersubmit2"></button>
             </div>
-    </form>
+   
+     </form>
     </div>
     </div>
+    <script src="Javascript.js"></script>
 </body>
 </html>

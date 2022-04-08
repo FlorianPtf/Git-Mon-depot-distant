@@ -34,9 +34,6 @@
 
 
               header("Location: disc_index.php");
-
-
-
 ?>
 
 

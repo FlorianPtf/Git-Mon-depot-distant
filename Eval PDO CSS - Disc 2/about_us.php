@@ -46,8 +46,9 @@
                 <li> <a href="disc_index.php" id="Btn5" type="button"
                 class="Btn5">Home</a></li>
                 <li> <a href="deconnexion.php" id="BtnDeco" type="button"
-                class="BtnDeco">Déconnexion</a></li>
+                class="BtnDeco">Disconnect</a></li>
             </ul>
+        </div>
         </div>
     </header>
 
@@ -68,17 +69,8 @@
                 Voluptates soluta non incidunt cumque. Tenetur molestiae optio cumque.</p>
 
         </div>
-
-
-
-
-
-
-
-
-
         </div>
-
+    </div>
 
 
 

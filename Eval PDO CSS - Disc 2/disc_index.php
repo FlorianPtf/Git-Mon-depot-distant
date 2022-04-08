@@ -48,7 +48,7 @@
                 <li> <a href="add_form.php" id="Btn5" type="button"
                 class="Btn5">Ajouter</a></li>
                 <li> <a href="deconnexion.php" id="BtnDeco" type="button"
-                class="BtnDeco">Déconnexion</a></li>
+                class="BtnDeco">Disconnect</a></li>
             </ul>
         </div>
     </header>
@@ -74,7 +74,7 @@
                 <h3 class="car-subtitle"><?= $data->artist_name; ?> </h3>
                         <p class="card-text">Label : <?= $data->disc_label; ?>  </p>
                         <p><?= $data->disc_year; ?> | <?= $data->disc_genre; ?></p>
-                        <a href="details.php?id=<?php echo $data->disc_id; ?>" id="Btn_details" class="Btn_details">Details</a>       
+                        <a href="disc_detail.php?id=<?php echo $data->disc_id; ?>" id="Btn_details" class="Btn_details">Details</a>       
             </div>
         </div>
         <?php } ?>  
