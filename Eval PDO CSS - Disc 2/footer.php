@@ -29,9 +29,9 @@
                         <h4>Follow Us</h4>
                         
                             <ul>
-                                <li style="--clr: #1877f2;"> <a href="#"> <i class="fab fa-facebook-f" id="facebook"></i> </a> </li>
-                                <li style="--clr: #1da1f2;"> <a href="#"> <i class="fab fa-twitter" id="twitter"></i> </a> </li>
-                                <li style="--clr: #ffffff;"> <a href="#"> <i class="fab fa-github" id="github"></i> </a> </li>
+                                <li style="--clr: #1877f2;"> <a href="https://m.facebook.com/florian.bruloy"> <i class="fab fa-facebook-f" id="facebook"></i> </a> </li>
+                                <li style="--clr: #1da1f2;"> <a href="https://twitter.com/FlorianPTF"> <i class="fab fa-twitter" id="twitter"></i> </a> </li>
+                                <li style="--clr: #ffffff;"> <a href="https://github.com/FlorianPtf/Git-Mon-depot-distant"> <i class="fab fa-github" id="github"></i> </a> </li>
                             </ul>
                    
                     </div>
