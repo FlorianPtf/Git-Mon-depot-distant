@@ -1,0 +1,32 @@
+id_abonnement                   INT 
+nom_abonnement                  VARCHAR(255)
+prenom_abonnement               VARCHAR(255)
+adresse_abonnement              VARCHAR(255)
+ville_abonnement                VARCHAR(255)
+code_postal_abonnement          VARCHAR(5)
+numero_telephone_abonnement     VARCHAR(12)
+date_abonnement                 DATE
+id_bibliothecaire               INT
+nom_bibliothecaire              VARCHAR(255)
+prenom_bibliothecaire           VARCHAR(255)
+adresse_bibliothecaire          VARCHAR(255)
+ville_bibliothecaire            VARCHAR(255)
+code_postal_bibliothecaire      VARCHAR(5)
+numero_telephone_bibliothecaire VARCHAR(12)
+lettre_alphabetique             VARCHAR(1)
+numero_livre                    INT AUTO_INCREMENT
+titre_livre                     VARCHAR(255)
+auteur_livre                    VARCHAR(255)
+editeur_livre                   VARCHAR(255)
+theme_livre                     VARCHAR(255)
+date_edition_livre              DATE
+date_reception_livre            DATE
+nombre_emprunt_livre            INT
+date_emprunt_livre              DATE
+date_retour_livre               DATE
+date_relance                    DATE
+nombre_relance                  VARCHAR(255)
+date_retour_max_livre           DATE
+
+
+
