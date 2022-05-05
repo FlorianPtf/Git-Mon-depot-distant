@@ -14,6 +14,10 @@
     $db = ConnexionBase();
     session_start();
 
+    if (!isset($_SESSION['user'])) {
+        header('location:inscription_form.php');
+    }
+
         // On récupère l'ID passé en paramètre :
         $id = $_GET["id"];
 

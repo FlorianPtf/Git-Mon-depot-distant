@@ -18,9 +18,9 @@
     session_start();
     $cd = 0;
 
-    // if (!isset($_SESSION['user'])) {
-    //     header('location:inscription_form.php');
-    // }
+    if (!isset($_SESSION['user'])) {
+        header('location:inscription_form.php');
+    }
 ?>
 
     <div class="bgindex">

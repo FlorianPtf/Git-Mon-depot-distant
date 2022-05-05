@@ -16,9 +16,9 @@
     session_start();
     $cd = 0;
 
-    // if (!isset($_SESSION['user'])) {
-    //     header('location:inscription_form.php');
-    // }
+    if (!isset($_SESSION['user'])) {
+        header('location:inscription_form.php');
+    }
 ?>
 
     <div class="bgindex">
@@ -59,28 +59,26 @@
             
         <div class="abouttext">
             <h4>About Velvet Records</h4> <hr>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, harum repellat. 
-                Voluptates soluta non incidunt cumque. Tenetur molestiae optio cumque.</p>
+            <p>Velvet Records est un site collaboratif qui permet de répertorier tout disques et artistes 
+                de n'importe quelle générations.</p>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, harum repellat. 
-                Voluptates soluta non incidunt cumque. Tenetur molestiae optio cumque.</p>
+            <p>Site participatif depuis plusieurs décennies, vous pourrez y retrouver tous vos artistes préféré
+                de n'importe quel genre musical.</p>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, harum repellat. 
-                Voluptates soluta non incidunt cumque. Tenetur molestiae optio cumque.</p>
+            <p>Vous ne parvenez pas à trouver votre musique préférée, inscrivez là !</p>
 
         </div>
         </div>
     </div>
 
+    <script>
+    var logofly = document.getElementById("LogoFly");
+    logofly.addEventListener("mouseover", logochange);
 
-
-
-
-
-
-
-
-
+    function logochange(){
+    setTimeout(function(logochange){window.location.href = "disc_index.php"; }, 4800);
+    }
+    </script>
 
 
 </body>

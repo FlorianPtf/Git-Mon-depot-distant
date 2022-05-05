@@ -33,13 +33,16 @@
         {
             if(filter_var($mail, FILTER_VALIDATE_EMAIL))
             {
-                if(password_verify($mdp1, $password))
+                if(password_verify($mdp1, $data['membres_mdp']))
                 {
                     $_SESSION['user'] = $data['membres_pseudo'];
-                    header('Location: index.php');
+                    header('Location: disc_index.php');
                 }else header('Location: connexion_form.php');
+                $_SESSION['message1'] = "Mot de passe incorrect";
             }else header('Location: connexion_form.php');
+            $_SESSION['message1'] = "Email non conforme";
         }else header('Location: connexion_form.php');
+        $_SESSION['message1'] = "Email incorrect";
     }else header('Location: connexion_form.php');
     ?>
 

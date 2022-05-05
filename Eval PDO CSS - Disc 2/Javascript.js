@@ -1,4 +1,3 @@
-
 var submit = document.getElementById("formulairecontact");
 
 var boutonsubmit1 = document.getElementById("outersubmit1");
@@ -24,7 +23,6 @@ function timeout(){
     // boutonsubmit2.style.z-index : "-1";
 
     setTimeout(submitcontact, 3000);
-    
 
 }
 
@@ -32,4 +30,12 @@ function submitcontact(){
     submit.submit();
 }
     
-        
+
+
+
+
+
+
+
+
+

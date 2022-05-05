@@ -108,13 +108,12 @@
         opacity: 1;
 		transform: translate(300px, -300px) scale(0.20) rotate3d(0, 1, 0.8, 3.142rad);
         filter: drop-shadow(0 0 50px #2980b9) drop-shadow(0 0 90px #2980b9) drop-shadow(0 0 120px #2980b9);
-
 	}
 	100% {
 		opacity: 0;
 		transform: translate(10000px, -1000px) scale(0);
         filter: drop-shadow(0 0 50px #2980b9) drop-shadow(0 0 100px #2980b9) drop-shadow(0 0 150px #2980b9);
-
+        
 	}
 }
 

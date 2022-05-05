@@ -120,7 +120,6 @@ FROM orders;
 
 
 
-
 -- **************************       PROCEDURE STOCKÉE     ************************************
 
 -- *********** Depuis quelle date le client "Du monde entier" n'a plus commandé  *************    
@@ -205,26 +204,3 @@ DELIMITER ;
 -- INSERT INTO orderdetails (OrderID, ProductID, UnitPrice, Quantity, Discount) VALUES (0, 0, 0, 0, 0);
 
 -- COMMIT;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

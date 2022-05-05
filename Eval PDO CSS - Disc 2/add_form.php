@@ -14,6 +14,10 @@
     $db = ConnexionBase();
     session_start();
 
+    if (!isset($_SESSION['user'])) {
+        header('location:inscription_form.php');
+    }
+
     $requete1 = $db->query("SELECT * FROM artist");
     $requete1->execute();
     $tableau = $requete1->fetchAll(PDO::FETCH_OBJ);
