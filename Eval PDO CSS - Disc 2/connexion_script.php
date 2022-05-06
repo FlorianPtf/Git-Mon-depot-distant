@@ -38,11 +38,8 @@
                     $_SESSION['user'] = $data['membres_pseudo'];
                     header('Location: disc_index.php');
                 }else header('Location: connexion_form.php');
-                $_SESSION['message1'] = "Mot de passe incorrect";
             }else header('Location: connexion_form.php');
-            $_SESSION['message1'] = "Email non conforme";
         }else header('Location: connexion_form.php');
-        $_SESSION['message1'] = "Email incorrect";
     }else header('Location: connexion_form.php');
     ?>
 

@@ -33,7 +33,11 @@
 
         <div class="form-text">
             <label for="mail">
-                <span class="info" name="msginfo" id="msginfo">
+                
+            </label> <br>
+                <input type="email" class="form" name="mail" id="mail" placeholder= "Renseigner votre mail " required>
+        </div>
+        <span class="info" name="msginfo" id="msginfo">
             <?php        
             if(isset($_SESSION["message6"]))
             { 
@@ -42,15 +46,16 @@
             }
             ?>
         </span> 
-            </label> <br>
-                <input type="email" class="form" name="mail" id="mail" placeholder= "Renseigner votre mail " required>
-        </div>
 
 
 
         <div class="form-text">
             <label for="pseudo">
-                <span class="info" name="msginfo" id="msginfo">
+                
+            </label> <br>
+                <input type="text" class="form" name="pseudo" id="pseudo" placeholder= "Renseigner votre pseudo " required>
+        </div>
+        <span class="info" name="msginfo" id="msginfo">
             <?php        
             if(isset($_SESSION["message7"]))
             { 
@@ -59,15 +64,16 @@
             }
             ?>
         </span> 
-            </label> <br>
-                <input type="text" class="form" name="pseudo" id="pseudo" placeholder= "Renseigner votre pseudo " required>
-        </div>
 
 
 
         <div class="form-text">
             <label for="mdp1">
-                <span class="info" name="msginfo" id="msginfo">
+                
+            </label> <br>
+                <input type="password" class="form" name="mdp1" id="mdp1" placeholder= "Renseigner votre mot de passe " required>
+        </div>
+        <span class="info" name="msginfo" id="msginfo">
             <?php        
             if(isset($_SESSION["message8"]))
             { 
@@ -76,9 +82,6 @@
             }
             ?>
         </span> 
-            </label> <br>
-                <input type="password" class="form" name="mdp1" id="mdp1" placeholder= "Renseigner votre mot de passe " required>
-        </div>
 
 
 
