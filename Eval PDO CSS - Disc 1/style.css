@@ -1,0 +1,1775 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@keyframes transitionin{
+    from {
+        opacity:0.8;
+        transform:translateY(-40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transitioncoteg{
+    from {
+        opacity:0;
+        transform:translateX(-500px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes transitioncoted{
+    from {
+        opacity:0;
+        transform:translateX(500px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes transitioncotedetailsg{
+    0% {
+        opacity:0;
+        transform:translateX(-10rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes transitioncotedetailsd{
+    
+    0% {
+        opacity:0;
+        transform:translateX(100%);
+    }
+    10% {
+        opacity:0;
+        transform:translateX(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes transitiondetailsin{
+    from {
+        opacity:0.8;
+        transform:translateY(8rem);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+	0% {
+		transform: translate(0px, 0px) scale(1);
+    }
+	50% {
+		transform: translate(0, 0px) scale(0.85) rotate(10deg);
+        filter: drop-shadow(0 0 10px #8e44ad) drop-shadow(0 0 20px #8e44ad);
+	}
+	100% {
+		transform: translate(0px, 0px) scale(1);
+	}
+}
+
+@keyframes flying {
+	0% {
+        opacity: 1;
+		transform: translate(0px, 0px) scale(1);
+    }
+	50% {
+        opacity: 1;
+		transform: translate(420px, -70px) scale(0.30);
+	}
+    51% {
+        opacity: 1;
+		transform: translate(420px, -70px) scale(0.30);
+        filter: drop-shadow(0 0 30px #2980b9) drop-shadow(0 0 60px #2980b9) drop-shadow(0 0 90px #2980b9);
+	}
+    90% {
+        opacity: 1;
+		transform: translate(300px, -300px) scale(0.20) rotate3d(0, 1, 0.8, 3.142rad);
+        filter: drop-shadow(0 0 50px #2980b9) drop-shadow(0 0 90px #2980b9) drop-shadow(0 0 120px #2980b9);
+
+	}
+	100% {
+		opacity: 0;
+		transform: translate(10000px, -1000px) scale(0);
+        filter: drop-shadow(0 0 50px #2980b9) drop-shadow(0 0 100px #2980b9) drop-shadow(0 0 150px #2980b9);
+
+	}
+}
+
+@keyframes spin{
+    80% { 
+        border: 2px solid transparent;
+        border-left: 2px solid #ffffff;
+    }
+    100% {
+        transform: rotate(1080deg);
+        border: 2px solid #ffffff;
+    }
+}
+
+@keyframes check{
+    to {
+        fill : #ffffff;
+    }
+}
+
+@keyframes circle{
+    to {
+        border: 2px solid #ffffff;
+    }
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+
+/* ********************************************************************************************************* */
+/* ******************************************** PAGE INSCRIPTION ******************************************* */
+/* ********************************************************************************************************* */
+
+#bg {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+.containerLogin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    opacity: 85%;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 0 8rem rgba(0, 0, 0, 0.900);
+}
+
+.containerLogin h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.containerLogin hr {
+    width: 50%;
+    height: auto;
+    color: rgb(255, 255, 255)
+}
+
+.containerLogin #inscription {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -10%);
+    margin-top: 10%;
+}
+
+.containerLogin form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.containerLogin label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.containerLogin .form-text input {
+    width: 18rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#Btn1 {
+    display: flex;
+    margin-left: 15%;
+    justify-content: center;
+    width: 70%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#Btn1:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.connect_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.connect_link a {
+    color: white;
+    text-decoration: none;
+}
+
+.Btn2 {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.Btn2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.Btn2:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* ********************************************************************************************************* */
+/* ******************************************** PAGE CONNEXION ********************************************* */
+/* ********************************************************************************************************* */
+
+#bg2 {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+#vinyle {
+    position: fixed;
+    height: 30%;
+    width: auto;
+    bottom: 0%;
+    left: 5%;
+    opacity: 80%;
+    pointer-events: none;
+}
+
+#casquebleu {
+    position: fixed;
+    height: 60%;
+    width: auto;
+    bottom: 10%;
+    left: 70%;
+    opacity: 90%;
+    pointer-events: none;
+}
+
+.containerConnect {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    opacity: 85%;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 0 8rem rgba(0, 0, 0, 0.900);
+}
+
+.containerConnect h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.containerConnect hr {
+    width: 50%;
+    height: auto;
+    color: rgb(255, 255, 255)
+}
+
+.containerConnect #inscription {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -10%);
+    margin-top: 10%;
+}
+
+.containerConnect form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.containerConnect label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.containerConnect .form-text input {
+    width: 18rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#Btn3 {
+    display: flex;
+    margin-left: 15%;
+    justify-content: center;
+    width: 70%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#Btn3:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.connect_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.connect_link a {
+    color: white;
+    text-decoration: none;
+}
+
+.Btn4 {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.Btn4:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.Btn4:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* ********************************************************************************************************* */
+/* ******************************************* PAGE DETAILS INDEX ****************************************** */
+/* ********************************************************************************************************* */
+
+
+
+#bg3 {
+    position: fixed;
+    height: 110%;
+    width: 100%;
+    pointer-events: none;
+    -webkit-animation: transitionin 800ms ease-in-out;
+    animation: transitionin 800ms ease-in-out;
+}
+
+.containerIndex .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ********************************************************************************************************* */
+/* ******************************************* BOUTON EFFET NEON ******************************************* */
+/* ********************************************************************************************************* */
+
+.navbar {
+    position: relative;
+    background:linear-gradient(90deg, rgba(255, 254, 254, 0.3), rgba(132, 61, 199, 0.2));
+    border-bottom: solid 10px;
+    border-color: hsla(204, 89%, 43%, 0.201);
+}
+
+.navbar img {
+    width: 200px;
+    height: auto;
+}
+
+.navbar #Liste {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 38px;
+    margin-left: 1%;
+    margin-top: 1%;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: default;
+    overflow: hidden;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+.navbar #Liste:hover {
+    color: #ffffff;
+    background: #2470af;
+    box-shadow: 0 0 10px #2470af, 0 0 40px #2470af, 0 0 80px #2470af;
+    transition-delay: 1.5s;
+    width: 200px;
+}
+
+#Liste span {
+    position: absolute;
+    display: block;
+}
+
+#Liste span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2470af);
+}
+
+#Liste:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+#Liste span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2470af);
+}
+
+#Liste:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#Liste span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2470af);
+}
+
+#Liste:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#Liste span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2470af);
+}
+
+#Liste:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/* ********************************************************************************************************* */
+/* ******************************************* BOUTON UNDERLINE ******************************************** */
+/* ********************************************************************************************************* */
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 15px 25px;
+}
+
+.navbar ul li a {
+    margin-right: 5%;
+    text-decoration: none;
+    color: white;
+}
+
+.Btn5 {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.Btn5:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.Btn5:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.BtnDeco {
+    display: inline-block;
+    position: relative;
+    color: #ad3599;
+}
+
+.BtnDeco:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ad3599;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.BtnDeco:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* ********************************************************************************************************* */
+/* ******************************************* INTRO LISTE DISQUES ***************************************** */
+/* ********************************************************************************************************* */
+
+.intro{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.intro hr {
+    border: 1px solid;
+    border-color: #0c81cf;
+    width: 25%;
+}
+
+
+/* ********************************************************************************************************* */
+/* ********************************************** CARD DETAILS ********************************************* */
+/* ********************************************************************************************************* */
+
+
+.containerCard {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    flex-wrap: wrap;
+    padding-top: 7%;
+    padding-left: 10%;
+    margin-right: 5%;
+    transform: translate(19vh, 2vw);
+}
+
+.containerCard .card {
+    position: relative;
+    max-width: 260px;
+    height: 215px;
+    border-radius: 10px;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-bottom: 200px;
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    transition: 0, 3s ease-in-out;
+}
+
+.containerCard .card:hover {
+    height: 480px;
+    transition: 0.4s ease-in-out;
+}
+
+.containerCard .card .imgbx {
+    position: relative;
+    max-width: 260px;
+    max-height: 250px;
+    top: -60px;
+    left: 0px;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 100%;
+    border: none;
+}
+
+.containerCard .card:hover .imgbx img {
+    border-radius: 5%;
+    border: 0.2rem solid #ffffff;
+    transition: 0.4s;
+}
+
+.containerCard .card .imgbx img {
+    max-width: 250px;
+    max-height: auto;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 0.250rem solid #ffffff;
+    pointer-events: none;
+}
+
+.containerCard .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.containerCard .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -25%;
+    transition-delay: 0.3s;
+}
+
+#Btn_details {
+    display: flex;
+    margin-left: 15%;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#Btn_details:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+
+/* ********************************************************************************************************* */
+/* ********************************************* FOOTER GAUCHE ********************************************* */
+/* ********************************************************************************************************* */
+
+
+footer{
+    position: relative;
+    background: linear-gradient(90deg, rgba(126, 36, 111, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.9) 79%, rgba(0, 0, 0, 1) 80%,rgba(0, 0, 0, 1) 100%);
+    width: 100%;
+    height: 22rem;
+    color: white;
+}
+
+.footer1 {
+    width: 300px;
+    height: auto;
+    padding-top: 2%;
+    padding-left: 8%;
+    text-align: center;
+}
+
+.footer1 img{
+    width: 40%;
+    height: auto;
+}
+
+.footer1:hover img{
+    transform: rotate(10deg);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* ********************************************************************************************************* */
+/* ********************************************* FOOTER MILIEU ********************************************* */
+/* ********************************************************************************************************* */
+
+.footer2 {
+    padding-top: 2%;
+    padding-left: 22%;
+}
+
+.footer2 li{
+    margin-left: -35px;
+}
+
+.footer3 {
+    padding-top: 2%;
+    padding-left: 32%;
+}
+
+.containerfooter ul{
+    list-style: none;
+}
+
+.containerfooter a{
+    text-decoration: none;
+    color: white;
+}
+
+.rowfooter{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ********************************************************************************************************* */
+/* ********************************************* TITRE FOOTER  ********************************************* */
+/* ********************************************************************************************************* */
+
+.footer2 h4{   
+    position: relative;
+    width: 90%;
+    height: 15%;
+    font-size: 20px;
+    color:white;
+}
+
+.footer3 h4{
+    position: relative;
+    width: 80%;
+    height: 15%;
+    font-size: 20px;
+    color:white;
+    transform: translate(25%, 0);
+}
+
+.footer2 li:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+/* ********************************************************************************************************* */
+/* **************************************** UNDERLINE TITRE FOOTER ***************************************** */
+/* ********************************************************************************************************* */
+
+.footer2 h4::after{
+    content: '';
+    position: absolute;
+    width: 110%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, #2470af);
+    transform-origin: bottom left;
+    transition: transform 0.50s ease-out;
+}
+
+.footer3 h4::after{
+    content: '';
+    position: absolute;
+    width: 45%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, transparent, #2470af);
+    transform-origin: bottom left;
+    transition: transform 0.50s ease-out;
+}
+
+.footer2 h4:hover::after,
+.footer3 h4:hover::after{
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.footer2 li{
+    font-size: 18px;
+}
+
+.footer2 li:hover{
+    transform: translateX(10%);
+    transition: 0.3s ease-in-out;
+}
+
+/* ********************************************************************************************************* */
+/* ********************************************** FOOTER DROIT ********************************************* */
+/* ********************************************************************************************************* */
+
+.footer3 ul{
+    position: relative;
+    display: flex;
+    right: 50px;
+}
+
+.footer3 ul li {
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer3 ul li a{
+    position: relative;
+    text-decoration: none;
+}
+
+.footer3 ul li:hover{
+    z-index: 10000;
+    transform: scale(0.75);
+}
+
+.footer3 ul li::before {
+    content:'';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px rgba(0, 0, 0, 1),
+    0 0 0 22px var(--clr);
+    transition: 0.5s;
+}
+
+.footer3 ul li:hover::before {
+    inset: 0;
+}
+
+.footer3 ul li::after{
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 1);
+    transform: rotate(45deg);
+}
+
+.footer3 ul li a{
+    position:relative;
+    text-decoration: none;
+    text-align: center;
+    color: var(--clr);
+    transition: 0.5s;
+    font-size: 2em;
+    z-index: 10;
+}
+
+.footer3 ul li a:hover {
+    font-size: 3em;
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+/* ********************************************************************************************************* */
+/* ********************************************* FOOTER CREDIT ********************************************* */
+/* ********************************************************************************************************* */
+
+.credit hr{
+    width: 25%;
+    border: 0;
+    border-bottom: 1px solid rgb(36, 112, 175);
+    margin: 20px auto;
+}
+
+.credit {
+    text-align: center;
+    padding-bottom: 1px;
+}    
+
+
+/* ********************************************************************************************************* */
+/* *********************************************** ABOUT US ************************************************ */
+/* ********************************************************************************************************* */
+
+
+.containerabout{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.aboutlogo img{
+    -webkit-animation: transitioncoteg 2000ms ease-in-out;
+    animation: transitioncoteg 2000ms ease-in-out;
+}
+
+.abouttext{
+    -webkit-animation: transitioncoted 2000ms ease-in-out;
+    animation: transitioncoted 2000ms ease-in-out;
+}
+
+.aboutlogo{
+    margin-top: 10%;
+    margin-left: 5%;
+    opacity: 0.7;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.aboutlogo:hover #LogoFly{
+    transform: translate(0px, 0px);
+    -webkit-animation: flying 5s ease-in-out;
+    animation: flying 5s ease-in-out;
+}
+
+.abouttext{
+    width: 75%;
+    height: auto;
+    margin-left: 42%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.abouttext h4{
+    font-size: 32px;
+    text-align: center;
+}
+
+.abouttext hr{
+    width: 25%;
+    border: 0;
+    border-bottom: 1px solid rgb(36, 112, 175);
+    margin: 20px auto;
+}
+
+.abouttext p{
+    padding-top: 5%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+/* ********************************************************************************************************* */
+/* ********************************************* CONTACTS US *********************************************** */
+/* ********************************************************************************************************* */
+
+
+#bg4 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.containercontact {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    opacity: 85%;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 0 8rem rgba(0, 0, 0, 0.900);
+}
+
+.containercontact h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.containercontact hr {
+    width: 50%;
+    height: auto;
+    color: rgb(255, 255, 255)
+}
+
+.containercontact #contact {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -10%);
+    margin-top: 10%;
+}
+
+.containercontact form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.containercontact label, textarea {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.containercontact #contactmsg {
+    height: 7em;
+}
+
+.containercontact .form-text input, textarea {
+    width: 18rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+.containercontact input::placeholder {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.form-area::placeholder{
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.containercontact .form-area{
+    max-width: 18em;
+    max-height: 9em;
+    min-height: 5em;
+}
+
+.selectnone{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.footercontact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footercontact #outersubmit2{
+    display: flex;
+    position: absolute;
+    margin-top: 2.5em;
+    width: 55%;
+    height: 4.2em;
+    background-color: transparent;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.footercontact .selectnone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    width: 70%;
+    height: 2.5em;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.selectnone:hover {
+    font-size: 22px;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.footercontact span, .footercontact svg{
+    position: absolute;
+    color: #ffffff;
+    fill: transparent;
+    transition: 0.4s;
+}
+
+.footercontact .selectnone:hover span{
+    transition: 0.4s;
+    font-size: 20px;
+    
+}
+
+.footercontact .selectnone:focus{
+    outline: none;
+    border: 2px solid transparent;
+    width: 50px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    animation: spin 2s 200ms forwards;
+}
+
+.footercontact .selectnone:focus span{
+    color: transparent;
+}
+
+.footercontact .selectnone:focus svg{
+    animation: check 1ms 2100ms forwards;
+}
+
+
+/* ********************************************************************************************************* */
+/* ********************************************* PAGE DETAILS ********************************************** */
+/* ********************************************************************************************************* */
+
+
+.bgdetails{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    overflow: hidden;
+    position: fixed;
+}
+
+
+.containerDetails .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerdetails{
+    width: 100%;
+    height: auto;
+}
+
+.bande .bandetop{
+    display: flex;
+    width: 550rem;
+    height: 200rem;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 10px solid rgba(0, 136, 220, 0.555);
+    border-bottom: none;
+    transform: translate(-39%, 21%);
+    box-shadow: 0 -1rem 7rem rgb(0, 136, 220, 0.9);
+}
+
+.bande2 .bandebot{
+    display: flex;
+    width: 550rem;
+    height: 200rem;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 5px solid rgba(184, 0, 0, 0.6);
+    border-bottom: none;
+    transform: translate(-39%, -78%);
+    box-shadow: 0 0 6rem rgb(255, 0, 0, 0.9), 0 -0.3rem 1.5rem rgba(255, 230, 0, 0.5);
+}
+
+.detailstitre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.detailstitre img{
+    display: flex;
+    position: absolute;
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+    margin-top: 35%;
+    margin-left: 40%;
+    animation: transitioncotedetailsd 2000ms ease-in-out;
+}
+
+.bande, .bande2{
+    animation: transitiondetailsin 1500ms ease-in-out;
+}
+
+.detailstitre img:hover #detailsimg{
+    border-radius: 5%;
+    transition: 0.5s ease-in-out;
+}
+
+.detailstitre .detailsul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    margin-top: 35%;
+    margin-left: -40%;
+    animation: transitioncotedetailsg 2000ms ease-in-out;
+}
+
+.detailstitre .detailsul .liartist, .lititre, .lilabel{
+    display: flex;
+    text-decoration: none;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 5px;
+
+}
+
+.detailstitre .detailslogo{
+    list-style: none;
+}
+
+.detailstitre .detailslogo #detailsupdate,
+.detailstitre .detailslogo #detailsdelete{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    animation: transitioncotedetailsg 2000ms ease-in-out;
+    cursor: pointer;
+}
+
+.detailstitre .detailslogo #detailsupdate{
+    margin-top: 25%;
+    margin-left: -25%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.detailstitre .detailslogo #detailsdelete{
+    margin-top: 25%;
+    margin-left: -20%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.detailstitre .detailslogo .detailsmodifier{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    margin-top: 25%;
+    margin-left: -30rem;
+    color: white;
+    opacity: 0;
+}
+
+.detailstitre .detailslogo .detailssupprimer{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    margin-top: 25%;
+    margin-left: -25rem;
+    color: white;
+    opacity: 0;
+}
+
+.detailstitre .detailslogo .lipencil:hover p{
+    transform: translateY(3rem);
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.detailstitre .detailslogo .litrash:hover p{
+    transform: translateY(3rem);
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.detailslogo li a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.detailstitre .litrash:hover #detailsdelete{
+    transform: scale(1.25);
+    transition: 0.5s ease-in-out;
+}
+
+.detailstitre .lipencil:hover #detailsupdate{
+    transform: scale(1.25);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* ********************************************************************************************************* */
+/* ********************************************* PAGE AJOUT ************************************************ */
+/* ********************************************************************************************************* */
+
+#bgadd {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0.95;
+}
+
+.containerAdd {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    opacity: 85%;
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 0 8rem rgba(0, 0, 0, 0.900);
+}
+
+.containerAdd h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.containerAdd hr {
+    width: 50%;
+    height: auto;
+    color: rgb(255, 255, 255)
+}
+
+.containerAdd #ajout {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -10%);
+    margin-top: 10%;
+}
+
+.containerAdd form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.containerAdd label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-text input{
+    width: 25rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+.form-group select{
+    width: 25.5rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+.form-group select option{
+    background: #804b77;
+}
+
+
+#fileUpload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    width: 10rem;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-weight: 700;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+    cursor: pointer;
+}
+
+#file-upload{
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+#fileUpload:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+
+input::placeholder {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.footeradd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#Btnadd {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#Btnadd:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+#image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+#BtnBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#BtnBack:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+
+/* ********************************************************************************************************* */
+/* ********************************************* PAGE AJOUT ************************************************ */
+/* ********************************************************************************************************* */
+
+
+#bgupdate {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    opacity: 0.95;
+}
+
+.containerUpdate {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    opacity: 85%;
+    width: 600px;
+    height: 700px;
+    border-radius: 20px;
+    padding: 1.25rem;
+    box-shadow: 0 0 8rem rgba(0, 0, 0, 0.900);
+}
+
+.containerUpdate h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.containerUpdate hr {
+    width: 50%;
+    height: auto;
+    color: rgb(255, 255, 255)
+}
+
+.containerUpdate #update {
+    display: flex;
+    justify-content: center;
+    transform: translate(0%, -10%);
+    margin-top: 10%;
+}
+
+.containerUpdate form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.containerUpdate label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.form-text input{
+    width: 25rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+.form-group select{
+    width: 25.5rem;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+}
+
+.form-group select option{
+    background: #804b77;
+}
+
+
+#fileUpload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    width: 10rem;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-weight: 700;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    color: white;
+    cursor: pointer;
+}
+
+#file-uploadmodif{
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+#fileUpload:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+
+input::placeholder {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.footerupdate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#Btnupdate {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#Btnupdate:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+#imageupdate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 5%;
+    border-radius: 50%;
+}
+
+#BtnBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+    border: 1px solid;
+    background: linear-gradient(60deg, #804b77, #0c81cf);
+    margin-top: 10%;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#BtnBack:hover {
+    font-size: 22px;
+    overflow: hidden;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
