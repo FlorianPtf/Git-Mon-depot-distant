@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-30T14:44:51.763Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="vinJaRb1CDUMsEu2apI1" version="18.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-30T14:47:33.647Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="J7ENgpFy3i0bo4Kx1luv" version="18.1.3" type="github">
   <diagram id="fm7U9SSoICCijSZEIIOG" name="Page-1">
     <mxGraphModel dx="1497" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -35,13 +35,13 @@
           <mxGeometry x="695" y="124" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="n0n8YimcOrlQ7607udr9-19" value="Enregistrement&amp;nbsp; des emprunts" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="670" y="249" width="150" height="30" as="geometry" />
+          <mxGeometry x="670" y="190" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="n0n8YimcOrlQ7607udr9-21" value="Enregistrement des emprunts&lt;br&gt;Enregistrement des nouveaux documents" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="495" y="212" width="180" height="30" as="geometry" />
+          <mxGeometry x="495" y="190" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="n0n8YimcOrlQ7607udr9-22" value="Possède une carte d&#39;électeur&lt;br&gt;Peut emprunter" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="359" y="213" width="140" height="30" as="geometry" />
+          <mxGeometry x="359" y="190" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="n0n8YimcOrlQ7607udr9-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n0n8YimcOrlQ7607udr9-23" target="n0n8YimcOrlQ7607udr9-24">
           <mxGeometry relative="1" as="geometry">
