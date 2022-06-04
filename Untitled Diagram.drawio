@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-04T15:44:08.182Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="dOrFBbY48ERSpGmo_DpC" version="19.0.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-06-04T15:52:16.993Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="rk4yNQX4GZwW8MbMtL5o" version="19.0.0" type="github" pages="4">
   <diagram id="fm7U9SSoICCijSZEIIOG" name="Page-1">
     <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -320,6 +320,69 @@
         </mxCell>
         <mxCell id="stiEaf0FKdtl3MKYuFHg-8" value="Saisie le nom du client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="235" y="250" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-1" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="320" as="sourcePoint" />
+            <mxPoint x="140" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-2" value="Affiche les coordonnées du client" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="235" y="290" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-3" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="359" as="sourcePoint" />
+            <mxPoint x="620" y="359" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-4" value="Correction des coordonnées si besoin" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="235" y="330" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-6" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="400" as="sourcePoint" />
+            <mxPoint x="620" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-7" value="Validation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="235" y="370" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-8" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="480" as="sourcePoint" />
+            <mxPoint x="140" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-9" value="Affiche la liste des emprunts actuel de l&#39;usager" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="205" y="450" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-10" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="520" as="sourcePoint" />
+            <mxPoint x="620" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h_BM2nt2WZWLlYgOaM0g-11" value="Saisis les références du livre que l&#39;usager veut emprunter" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="170" y="490" width="425" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="j9LgrvrlVeKLUROe1rA4-1" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="440" as="sourcePoint" />
+            <mxPoint x="620" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j9LgrvrlVeKLUROe1rA4-2" value="Vérifie sir l&#39;usager possède une carte de lecteur" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="195" y="410" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="j9LgrvrlVeKLUROe1rA4-3" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="560" as="sourcePoint" />
+            <mxPoint x="140" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j9LgrvrlVeKLUROe1rA4-4" value="Crée alors une fiche avec les références Livre/Usager" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="167.5" y="530" width="425" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
