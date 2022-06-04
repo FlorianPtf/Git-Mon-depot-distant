@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-04T13:46:31.209Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="gkINPlQS40vyfRNUtNpt" version="19.0.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-06-04T15:24:44.299Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="erha_UVM0xFk1LXxJGlj" version="19.0.0" type="github" pages="3">
   <diagram id="fm7U9SSoICCijSZEIIOG" name="Page-1">
     <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -226,6 +226,47 @@
         </mxCell>
         <mxCell id="R5ejsQowTAxhP_O6j61L-17" value="Modifie les fiches documents" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="370" y="840" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="JXjafW2GaH_1Q0Z-mwPK" name="Page-3">
+    <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry width="820" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-3" value="Cas d&#39;utilisation lors d&#39;un emprunt de livre" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="10" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-4" value="&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="10" y="80" width="800" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-5" value="Flux d&#39;évènement" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-6" value="&lt;u&gt;&lt;b&gt;Conditions :&lt;br&gt;&lt;/b&gt;&lt;/u&gt;L&#39;usage est inscrit et à une carte de lecteur.&lt;br&gt;Le document choisi doit être un CD-ROM ou un livre&lt;br&gt;Les emprunts sont géré par les employés et les bénévoles.&lt;br&gt;&lt;u style=&quot;font-weight: bold;&quot;&gt;Résultats :&lt;/u&gt;&lt;br&gt;Une fiche d&#39;emprunt est crée et lié a un usager et un livre/CD-ROM&lt;br&gt;La fiche client est mis a jour" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="80" width="690" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-7" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="240" width="800" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-8" value="Flot nominal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="210" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-9" value="L&#39;employé/Bénévole recherche la fiche du client.&lt;br&gt;Le système lui affiches la fiche du client.&lt;br&gt;L&#39;employé/Bénévole vérifie si l&#39;usager peut emprunter.&lt;br&gt;L&#39;employé/Bénévole vérifie si l&#39;usager à une carte de lecteur.&lt;br&gt;Il crée alors une fiche d&#39;emprunt qui sera lié au livre et à l&#39;usager." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="240" width="770" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-10" value="Flot alternatifs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="340" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-11" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="370" width="800" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-12" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="380" width="750" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
