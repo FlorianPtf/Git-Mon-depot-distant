@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-04T15:33:11.659Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="zAvbqOzoUeHP8ep66Bqg" version="19.0.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-06-04T15:40:44.400Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="PibAIaiFUKNrmRYl7hF-" version="19.0.0" type="github" pages="4">
   <diagram id="fm7U9SSoICCijSZEIIOG" name="Page-1">
     <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -267,6 +267,32 @@
         </mxCell>
         <mxCell id="WRV-iEUPzYlpDvnzRhqR-12" value="&lt;b&gt;&lt;u&gt;L&#39;usager n&#39;est pas enregistré :&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;L&#39;employé enregistre alors le client et lui crée une carte de lecteur&lt;br&gt;//&amp;nbsp;Une fois cette action menée, le déroulement pour l&#39;emprunt peut reprendre //&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;L&#39;usager ne peux pas emprunter (trop d&#39;emprunt) :&lt;br&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;L&#39;employé arrête alors l&#39;emprunt et avertit l&#39;usager.&lt;br&gt;L&#39;usager doit donc rendre au moins un livre.&lt;br&gt;//&amp;nbsp;Une fois cette action menée, le déroulement pour l&#39;emprunt peut reprendre //&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;u&gt;L&#39;usager n&#39;a plus ses données a jour :&lt;br&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;L&#39;employé passe en revu les données désuètes.&lt;br&gt;L&#39;employé met a jour la fiche client avec les coordonnées mis a jour.&lt;br&gt;//&amp;nbsp;Une fois cette action menée, le déroulement pour l&#39;emprunt peut reprendre //" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="30" y="410" width="750" height="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="A-AkO6GztNCriJT9bpmF" name="Page-4">
+    <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zW5OQ8SyHlmldt2OBav8-2" value="Usager&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="80" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zW5OQ8SyHlmldt2OBav8-3" value="Employé / Bénévole" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="80" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zW5OQ8SyHlmldt2OBav8-11" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="154.5" y="1083.5999755859375" as="sourcePoint" />
+            <mxPoint x="154.5" y="172" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zW5OQ8SyHlmldt2OBav8-12" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="604.5" y="1081.5999755859375" as="sourcePoint" />
+            <mxPoint x="604.5" y="170" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
