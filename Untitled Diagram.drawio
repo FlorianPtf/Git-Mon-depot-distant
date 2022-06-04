@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-04T15:24:44.299Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="erha_UVM0xFk1LXxJGlj" version="19.0.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-06-04T15:30:57.254Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="NWvcmSM0HVJZlFj_CfpB" version="19.0.0" type="github" pages="3">
   <diagram id="fm7U9SSoICCijSZEIIOG" name="Page-1">
     <mxGraphModel dx="1038" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -263,10 +263,10 @@
           <mxGeometry x="20" y="340" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="WRV-iEUPzYlpDvnzRhqR-11" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="370" width="800" height="200" as="geometry" />
+          <mxGeometry x="10" y="370" width="800" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="WRV-iEUPzYlpDvnzRhqR-12" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="30" y="380" width="750" height="150" as="geometry" />
+        <mxCell id="WRV-iEUPzYlpDvnzRhqR-12" value="L&#39;usager n&#39;est pas enregistré :&amp;nbsp;&lt;br&gt;L&#39;employé enregistre alors le client et lui crée une carte de lecteur&lt;br&gt;//&amp;nbsp;Une fois cette action menée, le déroulement pour l&#39;emprunt peut reprendre //&lt;br&gt;&lt;br&gt;L&#39;usager ne peux pas emprunter (trop d&#39;emprunt) :&lt;br&gt;L&#39;employé arrête alors l&#39;emprunt et avertit l&#39;usager.&lt;br&gt;L&#39;usager doit donc rendre au moins un livre.&lt;br&gt;//&amp;nbsp;Une fois cette action menée, le déroulement pour l&#39;emprunt peut reprendre //&lt;br&gt;&lt;br&gt;L&#39;usager n&#39;a plus ses données a jour :&lt;br&gt;L&#39;employé passe en revu les données désuètes.&lt;br&gt;L&#39;employé met a jour la fiche client avec les coordonnées mis a jour.&lt;br&gt;//&amp;nbsp;Une fois cette action menée, le déroulement pour l&#39;emprunt peut reprendre //" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="380" width="750" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
