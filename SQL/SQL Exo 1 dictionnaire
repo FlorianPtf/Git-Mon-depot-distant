@@ -1,0 +1,7 @@
+per_num                 INT AUTO_INCREMENT
+per_nom                 VARCHAR(255)
+pre_prenom              VARCHAR(255)
+per_adresse             VARCHAR(255)
+per_ville               VARCHAR(255)
+gro_num                 INT AUTO_INCREMENT
+gro_libelle             VARCHAR(255)

@@ -1,0 +1,25 @@
+DROP USER if EXISTS 'util1'@'%';
+DROP USER if EXISTS 'util2'@'%';
+DROP USER if EXISTS 'util3'@'%';
+
+
+
+CREATE USER 'util1'@'%' IDENTIFIED BY 'Afpa1234';
+
+GRANT ALL PRIVILEGES 
+ON EVAL_SQLPAPYRUS.* 
+TO 'util1'@'%';
+
+
+CREATE USER 'util2'@'%' IDENTIFIED BY 'Afpa1234';
+
+GRANT SELECT
+ON EVAL_SQLPAPYRUS.* 
+TO 'util2'@'%';
+
+
+CREATE USER 'util3'@'%' IDENTIFIED BY 'Afpa1234';
+
+GRANT SHOW VIEW 
+ON EVAL_SQLPAPYRUS.fournis 
+TO 'util3'@'%';
