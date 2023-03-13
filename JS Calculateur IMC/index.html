@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculateur d'IMC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Calculateur D'IMC</h1>
+        </div>
+
+        <div class="section">
+            <label for="taille">Renseignez votre taille</label>
+            <input type="text" name="taille" class="taille" id="taille" maxlength="3" placeholder="cm">
+
+            <label for="poids">Renseignez votre poids</label>
+            <input type="text" name="poids" class="poids" id="poids" maxlength="3" placeholder="kg">
+
+            <button class="calcul" onclick="calcul()">Calcul de L'IMC</button>
+
+            <div class="imc" id="imc">
+
+            </div>
+            <div class="imctext" id="imctext">
+
+            </div>
+        </div>
+
+        <div class="frise">
+            <div class="frise1">
+                <p>Maigreur</p>
+                <p>< 18.5 </p>
+            </div>
+            <div class="frise2">
+                <p>Normal</p>
+                <p>18.5 - 25</p>
+            </div>
+            <div class="frise3">
+                <p>Surpoids</p>
+                <p>25 - 30</p>
+            </div>
+            <div class="frise4">
+                <p>Obésité</p>
+                <p>30 - 40</p>
+            </div>
+            <div class="frise5">
+                <p>Obésité morbide</p>
+                <p>> 40</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

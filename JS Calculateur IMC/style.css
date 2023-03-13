@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', 'sans-serif';
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url("img/jason-leung-UMncYEfO9-U-unsplash.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header{
+    top: 0%;
+    padding-top: 20px;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.section label{
+    font-size: 26px;
+    color: white;
+}
+
+.section input{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #94bbe9;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.section input::placeholder{
+    text-align: right;
+    font-size: 18px;
+}
+
+.section button{
+    padding: 10px;
+    border: 2px solid #94bbe9;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#imc{
+    padding-top: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#imctext{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.frise{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.frise1{
+    width: 120px;
+    height: 120px;
+    background: #94bbe9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+
+.frise2{
+    width: 120px;
+    height: 120px;
+    background: #abe994;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.frise3{
+    width: 120px;
+    height: 120px;
+    background: #e9a535;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.frise4{
+    width: 120px;
+    height: 120px;
+    background: #f57c20;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.frise5{
+    width: 120px;
+    height: 120px;
+    background: #f52020;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+#friseAnimated{
+    animation: MoveUp 0.5s ease 1 normal forwards;
+}
+
+#friseInactive{
+    animation: FadeOut 0.5s ease 1 normal forwards;
+}
+
+@keyframes MoveUp{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+@keyframes MoveUpLittle{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+}
+
+@keyframes FadeOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 320px) {
+    .header{
+        padding-top: 0px;
+    }
+    
+    .section{
+        padding-top: 10px;
+    }
+
+    #imctext{
+        display: none;
+    }
+
+    .frise1,
+    .frise2,
+    .frise3,
+    .frise4,
+    .frise5{
+        height: 80px;
+        width: 80px;
+    }
+
+    #friseAnimated{
+        animation: MoveUpLittle 0.5s ease 1 normal forwards;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 420px){
+    .header{
+        padding-top: 0px;
+    }
+
+    .section{
+        padding-top: 10px;
+    }
+
+    #imctext{
+        display: none;
+    }
+
+    .frise1,
+    .frise2,
+    .frise3,
+    .frise4,
+    .frise5{
+        height: 80px;
+        width: 80px;
+    }
+
+    #friseAnimated{
+        animation: MoveUpLittle 0.5s ease 1 normal forwards;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px){
+    .header{
+        padding-top: 0px;
+    }
+
+    #imctext{
+        display: none;
+    }
+
+    .frise1,
+    .frise2,
+    .frise3,
+    .frise4,
+    .frise5{
+        height: 100px;
+        width: 100px;
+    }
+}
